@@ -28,13 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.buttonHelloWorld = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // buttonHelloWorld
+            // 
+            this.buttonHelloWorld.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonHelloWorld.Location = new System.Drawing.Point(271, 170);
+            this.buttonHelloWorld.Name = "buttonHelloWorld";
+            this.buttonHelloWorld.Size = new System.Drawing.Size(297, 68);
+            this.buttonHelloWorld.TabIndex = 0;
+            this.buttonHelloWorld.Text = "paina tästä";
+            this.buttonHelloWorld.UseVisualStyleBackColor = true;
+            this.buttonHelloWorld.Click += new System.EventHandler(this.Button1_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.Controls.Add(this.buttonHelloWorld);
+            this.Name = "Form1";
+            this.Text = "Pääikkuna";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button buttonHelloWorld;
     }
 }
 
